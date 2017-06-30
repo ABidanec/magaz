@@ -35,7 +35,7 @@
 
 .b-logo{
 	float: left;
-	margin: 0 1em 0 0;
+	margin: 0 6em 0 0;
 }
 	.b-logo__link{
 		text-decoration: none;
@@ -180,6 +180,7 @@
 
 		&:hover > .b-top-menu__sub-list{
 			display: block;
+			@include transition($b-top-menu__sub-list-time);
 		}
 	}
 
@@ -188,6 +189,7 @@
 
 		&:hover > .b-top-menu__sub-list{
 			display: block;
+			@include transition($b-top-menu__sub-list-time);
 		}
 	}
 

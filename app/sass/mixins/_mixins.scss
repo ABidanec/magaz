@@ -11,3 +11,10 @@
     -o-border-radius: $radiusT $radiusR $radiusB $radiusL;
     border-radius: $radiusT $radiusR $radiusB $radiusL;
     }
+
+@mixin placeholder-color($color){
+	::-webkit-input-placeholder {color: $color;}
+	::-moz-placeholder          {color: $color;}
+	:-moz-placeholder           {color: $color;}
+	:-ms-input-placeholder      {color: $color;}
+}
