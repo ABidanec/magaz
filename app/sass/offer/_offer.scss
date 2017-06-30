@@ -1,0 +1,56 @@
+@import "var_offer";
+
+.b-offer{
+	margin: 0 0 $b-offer-mb 0;
+	padding: $b-offer-pt 0;
+	background: $b-offer-bg;
+}
+
+	.b-offer__list{
+		list-style: none;
+		vertical-align: top;
+	}
+
+		.b-offer__item{
+			position: relative;
+			float: left;
+			width: $b-offer__item-w;
+			margin: 0 0 0 $b-offer__item-pl; 
+
+			&:first-child{
+				margin: 0;
+			}
+		}
+
+			.b-offer__content{
+				position: absolute;
+				top: $b-offer__content-t;
+				left: $b-offer__content-l;
+				width: $b-offer__content-w;
+
+				p{
+					margin: 0 0 $b-offer__content-p-mb 0;
+					font-weight: 700;
+				}
+			}
+			
+				.b-offer__head{
+					color: $b-offer__head-c;
+					font-size: $b-offer__head-s;
+					font-weight: 700;
+					margin: 0 0 $b-offer__head-mb 0;
+				}
+				
+				.b-offer__link{
+					display: inline-block;
+					text-decoration: none;
+					padding: $b-offer__link-pt $b-offer__link-pr $b-offer__link-pb $b-offer__link-pl;
+					border: 2px solid $b-offer__link-c;
+					color: $b-offer__link-c;
+					@include transition(0.3s);
+
+					&:hover{
+						background: $b-offer__link-h-bg;
+						@include transition(0.3s);
+					}
+				}

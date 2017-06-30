@@ -1,0 +1,52 @@
+@import "_var_spec-offer";
+.b-spec-offer{
+	@extend .b-products;
+	background-image: $b-spec-offer;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+	.b-spec-offer__bg{
+		position: relative;
+		width: $b-spec-offer__bg-w;
+		padding:0 $b-spec-offer__bg-pr 0 0;
+	}
+
+	.b-spec-offer__text-bg{
+		position: absolute;
+		top: $b-spec-offer__text-bg-t;
+		left: $b-spec-offer__text-bg-l;
+		width: $b-spec-offer__text-bg-w;
+
+		p{
+			font-size: $b-spec-offer__text-bg-p;
+			margin: 0 0 1em 0;
+		}
+	}
+		.b-spec-offer__head-bg{
+			font-size: $b-spec-offer__head-bg-s;
+			color: $b-spec-offer__head-bg-c;
+			font-weight: 100;
+			margin: 0 0 $b-spec-offer__head-bg-mb 0;
+		}
+
+	.b-spec-offer__sm{
+		position: relative;
+		float: right;
+		width:$b-spec-offer__sm-w;
+		z-index: 100;
+	}
+		.b-spec-offer__text-sm{
+			position: absolute;
+			bottom: $b-spec-offer__text-sm-b;
+			left: $b-spec-offer__text-sm-l;
+			width: $b-spec-offer__text-sm-w;
+			text-align: center;
+		}
+
+		.b-spec-offer__sm-btn,
+		.b-spec-offer__bg-btn{
+			@extend .b-offer__link;
+			padding: 0.4em 2em;
+		}
