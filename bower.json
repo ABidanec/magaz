@@ -1,5 +1,5 @@
 {
-  "name": "nagorno12",
+  "name": "magaz",
   "description": "",
   "main": "",
   "license": "MIT",
@@ -13,5 +13,8 @@
     "test",
     "tests"
   ],
-  "devDependencies": {}
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "normalize-css": "normalize.css#^7.0.0"
+  }
 }

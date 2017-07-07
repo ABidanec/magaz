@@ -22,9 +22,11 @@
 				text-decoration: none;
 				color: $header-contact-link-c;
 				font-weight: 700;
+				@include transition($time);
 
 				&:hover{
 					color: $header-contact-link-c-h;
+					@include transition($time);
 				}
 			}
 
@@ -42,9 +44,11 @@
 		font-size: $logo-font-s;
 		font-weight: 100;
 		color: $logo-font-c;
+		@include transition($time);
 
 		&:hover{
 			color: $logo-font-c-h;
+			@include transition($time);
 		}
 	}
 
@@ -72,10 +76,12 @@
 		background: $b-t-search__send-bg;
 		color: $b-t-search__send-c;
 		border: none;
+		@include transition($time);
 
 		&:hover{
 			background: $b-t-search__send-bg-h;
 			color: $b-t-search__send-c-h;
+			@include transition($time);
 		}
 	}
 
@@ -90,9 +96,11 @@
 		color: $b-t-basket__link-c;
 		font-size: 1.2em;
 		vertical-align: center;
+		@include transition($time);
 
 		&:hover{
 			color: $b-t-basket__link-c-h;
+			@include transition($time);
 		}
 
 		.fa{
@@ -136,17 +144,27 @@
 		font-family: $b-top-menu__link-f, sans-serif;
 		font-size: $b-top-menu__link-s;
 		color: $b-top-menu__link-c;
-		padding: 0 0 1.4em 0;
+		padding: 0 0 $b-top-menu__link-pb 0;
+		@include transition($b-top-menu__sub-list-time);
 
 		&:hover{
 			color: $b-top-menu__link-c-h;
+			@include transition($b-top-menu__sub-list-time);
+		}
+	}
+
+	.b-top-menu__link{
+		&:hover{
 			border-bottom: 5px solid $b-top-menu__link-bg-h;
+			@include transition(0s);
 		}
 	}
 
 
 	.b-top-menu__sub-list{
-		display: none;
+		visibility: hidden;
+		opacity: 0;
+		@include transition($b-top-menu__sub-list-time);
 		position: absolute;
 		left: 0;
 		padding: 1em 0 0 0;
@@ -171,6 +189,7 @@
 			&:hover{
 				color: $-top-menu__sub-link-c-h;
 				background: $b-top-menu__sub-link-bg-h;
+				@include transition($b-top-menu__sub-list-time);
 			}
 		}
 
@@ -179,7 +198,8 @@
 	.b-top-menu__item{
 
 		&:hover > .b-top-menu__sub-list{
-			display: block;
+			visibility: visible;
+			opacity: 1;
 			@include transition($b-top-menu__sub-list-time);
 		}
 	}
@@ -188,7 +208,8 @@
 		position: relative;
 
 		&:hover > .b-top-menu__sub-list{
-			display: block;
+			visibility: visible;
+			opacity: 1;
 			@include transition($b-top-menu__sub-list-time);
 		}
 	}

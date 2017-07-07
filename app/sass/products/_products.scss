@@ -20,6 +20,7 @@
 			float: left;
 			width: $b-products__item-w;
 			margin: 0 0 $b-products__item-mb $b-products__item-ml;
+			text-align: center;
 
 			&:nth-child(4n+4){
 				margin: 0 0 $b-products__item-mb 0;
@@ -37,6 +38,7 @@
 			}
 
 			.b-products__price{
+				margin: 0 0 $b-products__price-mb 0;
 				font-family: $b-products__price-f;
 				font-size: $b-products__price-s;
 				color: $b-products__price-c;
@@ -60,10 +62,11 @@
 				text-decoration: none;
 				text-transform: uppercase;
 				color: $b-products__button-c;
-
+				@include transition($b-products__button-time);
 
 				&:hover{
 					background: $b-products__button-bg-h;
+					@include transition($b-products__button-time);
 				}
 
 				.fa-shopping-cart{

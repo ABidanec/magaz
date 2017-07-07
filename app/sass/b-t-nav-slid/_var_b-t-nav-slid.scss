@@ -1,6 +1,10 @@
 $b-t-nav-slid-bg: #efefef;
 
 $b-main-menu-w: 25%;
+$b-main-menu-bg: #fff;
+$b-main-menu-pt: 1em;
+$b-main-menu-mt: 1em;
+
 
 $b-main-menu__link-c: #2f2f2f;
 $b-main-menu__link-c-h: $b-top-menu__link-c-h;
@@ -8,9 +12,9 @@ $b-main-menu__link-f: $b-top-menu__link-f;
 $b-main-menu__link-s: 1.3em;
 $b-main-menu__link-bg: #fff;
 $b-main-menu__link-bg-h: #ededed;
+$b-main-menu__link-time: $time;
 
-$b-main-menu__link_active-c: #fff;
-$b-main-menu__link_active-bg: $b-top-menu__link-c-h;
+$b-main-menu__link_active-c: $b-main-menu__link-c-h;
 
 $b-slider-w: 30%;
 
