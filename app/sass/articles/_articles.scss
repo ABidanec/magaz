@@ -10,13 +10,16 @@
 
 	.b-articles__list{
 		list-style: none;
+		
 	}
 		.b-articles__item{
-			float: left;
+			display: inline-block;
 			width: $b-articles__item-w;
-			margin: 0 0 0 $b-articles__item-ml;
+			margin: 0 0 $b-articles__item-ml $b-articles__item-ml;
 			color: $b-articles__item-c;
-			&:first-child{
+			vertical-align: top;
+			&:first-child,
+			&::nth-child(3n+3){
 				margin: 0;
 			}
 		}
@@ -34,7 +37,7 @@
 			}
 
 				.b-articles__img{
-					max-width: 100%;
+					width: 100%;
 					vertical-align: bottom;
 				}
 
