@@ -75,8 +75,19 @@ var _moduleCaruselInner = (function(){
 		}
 		};
 
+	var _hiddenNavbuttons = function(){
+
+		if(itemCount <= fields.quantitySlides){
+			fields.buttonPrev.css({"display" : "none"});
+			fields.buttonNext.css({"display" : "none"});
+		}
+	}
+
 	return{
 		action: function(){
+
+			_hiddenNavbuttons();
+
 			// замена изображения при клике на миниатюру в списке
 			fields.smallImg.on('click', function(){
 				var _this = $(this),

@@ -3,6 +3,8 @@
 .b-prod{
 	margin: $b-prod-mt 0;
 }
+
+/************************** b-prod-gallery  *********************************/
 	.b-prod-gallery{
 		padding: 0 $l-prod-gallery__big-img-pr 0 0;
 	}
@@ -18,6 +20,9 @@
 			width: 100%;
 			overflow: hidden;
 		}
+			.b-prod-gallery__big-img{
+				max-width: 100%;
+			}
 
 		.b-prod-gallery-nav__list{
 			list-style: none;
@@ -80,8 +85,82 @@
     				left: 35%;
 				}
 			}
-
+/********************  b-prod__char  ************************/
 	.b-prod__char{
 		float: right;
 		width: $b-prod__char-w;
 	}
+
+		.b-prod__brand{
+			font-weight: 700;
+			margin: 0 0 $b-prod__brand-mb 0;
+			font-size: $b-prod__brand-s;
+
+			span{
+				font-weight: 300;
+				padding: 0 $b-prod__brand-span-pr 0 0;
+			}
+		}
+
+		.b-prod__sku{
+			@extend .b-prod__brand;
+		}
+
+		.b-prod__form{
+			margin: $b-prod__form-mt 0;
+		}
+			.b-prod__label{
+				display: block;
+				margin: 0 0 $b-prod__label-mb 0;
+				min-height: 33px;
+				vertical-align: center;
+				font-size: $b-prod__label-s;
+			}
+
+				.b-prod__select{
+					float: right;
+					width: $b-prod__select-w;
+					padding: $b-prod__select-pt $b-prod__select-pl;
+				    outline: none;
+				    border: none;
+				    margin-bottom: $b-prod__select-mb;
+				    background: #ddd;
+				    @include transition($time);
+				    @include border-radius($b-prod__select-bord-rad, $b-prod__select-bord-rad, $b-prod__select-bord-rad, $b-prod__select-bord-rad);
+
+				    &:hover{
+				    	background: #62bfc4;
+				    	@include transition($time);
+				    }
+				}
+
+				.b-prod__input-number{
+					@extend .b-prod__select;
+					width: $b-prod__input-number-w;
+				}
+
+				.b-prod__price{
+					@extend .b-products__price;
+				}
+
+				.b-prod__submit{
+					@extend .b-products__button;
+					border: none;
+					font-weight: 700;
+				}
+
+/**************  b-prod__desc  *****************/
+.b-prod__desc{
+	margin: $b-prod__desc-mt 0;
+
+	h3{
+		text-align: center;
+		font-size: $b-prod__desc_h3-s;
+	}
+
+	p{
+		margin: 0 0 $b-prod__desc_p-mb 0;
+		font-size: $b-prod__desc_p-s;
+		line-height: 1.4;
+	}
+}
