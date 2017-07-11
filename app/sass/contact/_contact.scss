@@ -1,0 +1,97 @@
+@import "var_contact";
+
+.b-map{
+	margin: 0 0 $b-map-mb 0;
+}
+
+.b-contact-info__list{
+	list-style: none;
+}
+
+	.b-contact-info__item{
+		position: relative;
+		float: left;
+		width: $b-contact-info__item-w;
+		font-size: $b-contact-info__item-s;
+		margin: 0 0 $b-contact-info__item-mb 0;
+
+		.fa{
+			position: absolute;
+			color: $b-contact-info__item_fa-c;
+			font-size: $b-contact-info__item_fa-s;
+		}
+	}
+
+	.b-contact-info__item-text{
+		width: $b-contact-info__item-text-w;
+		margin: 0 0 0 $b-contact-info__item-text-mb;
+
+		h4{
+			font-size: $b-contact-info__item-text_h4-s;
+			margin: 0 0 $b-contact-info__item-text_h4-mb 0;
+		}
+
+		p{
+			margin: 0 0 $b-contact-info__item-text_h4-mb 0;
+		}
+	}	
+
+		.b-contact-info__logo{
+			font-size: $b-contact-info__logo-s;
+			color: $b-contact-info__logo-c;
+			text-decoration: none;
+			@include transition($time);
+
+			&:hover{
+				color: $b-contact-info__logo-c_h;
+				@include transition($time);
+			}
+		}
+
+		.b-contact-info__email{
+			text-decoration: none;
+			color: $b-contact-info__email-c;
+			font-size: $b-contact-info__email-s;
+			@include transition($time);
+
+			&:hover{
+				color: $b-contact-info__email-c_h;
+				@include transition($time);
+			}
+		}
+
+/* form */
+.b-contact-form__label{
+	display: block;
+
+	p{
+		font-size: $b-contact-form__label-s;
+		margin: 0 0 $b-contact-form__label-mb 0;
+	}
+}
+
+	.b-contact-form__input{
+	    padding: $b-contact-form__input-pt $b-contact-form__input-pl;
+	    width: $b-contact-form__input-w;
+	    outline: none;
+	    border: none;
+	    margin-bottom: $b-contact-form__input-mb;
+	    background: $b-contact-form__input-bg;
+	    @include transition($time);
+
+	    &:hover{
+	    	background: $b-contact-form__input-bg_h;
+	    	@include transition($time);
+	    }
+	}
+
+	.b-contact-form__textarea{
+		@extend .b-contact-form__input;
+	}
+	
+	.b-contact-form__submit{
+		@extend .b-card__reset;
+		margin: 0;
+	}
+	
+/*end form*/

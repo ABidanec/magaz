@@ -1,0 +1,95 @@
+@import "var_card";
+
+.b-card{
+	margin: 0 0 $b-card-mb 0;
+}
+
+	.b-card__head{
+		text-align: center;
+		margin: 0 0 $b-card__head-mb 0;
+	}
+
+	.b-card__table{
+		width: $b-card__table-w;
+		border: 1px solid #222;
+		margin: 0 0 $b-card__table-mb 0;
+		background: $b-card__table-bg;
+
+
+		td{
+			width: 18%;
+			padding: $b-card__table_td-pt;
+			border: 1px solid #222;
+			background: $b-card__table_td-bg;
+			font-size: $b-card__table_td-s;
+		}
+	}
+			.b-card__img{
+				width: $b-card__img-w;
+				height: $b-card__img-h;
+			}
+
+	.b-card__thead{
+		text-align: center;
+		text-transform: uppercase;
+
+		td{
+			background: $b-card__thead_td-bg;
+			font-size: $b-card__thead_td-s;
+			font-weight: 700;
+		}
+	}
+
+	.b-card__quantity{
+		width: $b-card__quantity-w;
+		margin: 0;
+		padding: $b-prod__select-pt $b-prod__select-pl;
+	    outline: none;
+	    background: #ddd;
+	    border: 1px solid $b-card__table-bg;
+	    @include transition($time);
+	    @include border-radius($b-prod__select-bord-rad, $b-prod__select-bord-rad, $b-prod__select-bord-rad, $b-prod__select-bord-rad);
+
+	    &:hover{
+	    	background: #62bfc4;
+	    	@include transition($time);
+	    }
+	}
+
+	.b-card__textarea{
+		float: left;
+		width: $b-card__textarea-w;
+		height: $b-card__textarea-h;
+		padding: $b-card__textarea-pt;
+		@include border-radius($b-card__textarea-bord-rad, $b-card__textarea-bord-rad, $b-card__textarea-bord-rad, $b-card__textarea-bord-rad);
+		border: 2px solid $b-card__textarea-bord-c;
+		@include placeholder-color($b-card__textarea-plac-c);
+	}
+
+	.l-card__price{
+		float: right;
+		width: $l-card__price-w;
+		text-align: right;
+	}
+		.b-card__subtotal{
+			font-size: $b-card__subtotal-s;
+			margin: 0 0 $b-card__subtotal-mb 0;
+		}
+
+		.b-card__total{
+			@extend .b-card__subtotal;
+		}
+
+		.b-card__link-back,
+		.b-card__reset,
+		.b-card__submit,
+		.b-card__link-delete{
+			@extend .b-articles_link-btn;
+			float: right;
+			border: none;
+			margin: 0 0 0 $b-card__link-back-ml;
+		}
+
+		.b-card__link-delete{
+
+		}
