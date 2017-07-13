@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 _moduleToTop.action();
 _moduleCaruselInner.action();
+_moduleSlider.action();
 
 });
 
@@ -109,3 +110,16 @@ var _moduleCaruselInner = (function(){
 
 })();
 // end _moduleCaruselInner
+
+// _moduleSlider
+var _moduleSlider = (function(){
+
+	var slider = $('.b-slider_list');
+
+	return {
+		action: function(){
+			slider.slick();
+		}
+	}
+})();
+// end _moduleSlider

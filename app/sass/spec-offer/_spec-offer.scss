@@ -37,6 +37,10 @@
 		width:$b-spec-offer__sm-w;
 		z-index: 100;
 	}
+		.b-spec-offer__img-sm,
+		.b-spec-offer__img-bg{
+			width: 100%;
+		}
 		.b-spec-offer__text-sm{
 			position: absolute;
 			bottom: $b-spec-offer__text-sm-b;

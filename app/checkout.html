@@ -122,7 +122,6 @@
 					<table class="b-card__table">
 						<thead class="b-card__thead">
 							<tr>
-								<td>Изображение</td>
 								<td>Наименование</td>
 								<td>Цена</td>
 								<td>Количество</td>
@@ -131,33 +130,41 @@
 						</thead>
 						<tbody class="b-card__tbody">
 							<tr>
-								<td>
-									<img src="pic/products/product1.jpg" alt="img" class="b-card__img">
-								</td>
 								<td>4-in-1 Evolve Grill</td>
 								<td>$100.00</td>
-								<td><input type="number" class="b-card__quantity"></td>
-								<td>$100.00 <a href="" class="b-card__link-delete">Delete</a></td>
+								<td>1</td>
+								<td>$100.00</td>
 							</tr>
 							<tr>
-								<td>
-									<img src="pic/products/product1.jpg" alt="img" class="b-card__img">
-								</td>
 								<td><p>4-in-1 xcxczxczxczxczxccc cccccccccccccc cccccccccc ccccccccccccc cccccccccccccccc ccccccccccccc cccccccccccEvolve Grill</p></td>
 								<td><p>$100.00cccccccccccc ccccccccccccccccccccccc ccccccc ccccccccccccccc ccccccccc cccccccccc ccccccccccc cccccccc ccccccc</p></td>
-								<td><input type="number" class="b-card__quantity"></td>
-								<td><p>$100.00 cccccc ccccccccccccccc cccccccc ccccccccccccccccc ccccccc cccccccc ccccccccc ccccccccc ccccccccccccc</p><a href="" class="b-card__link-delete">Удалить</a></td>
+								<td>333</td>
+								<td><p>$100.00 cccccc ccccccccccccccc cccccccc ccccccccccccccccc ccccccc cccccccc ccccccccc ccccccccc ccccccccccccc</p></td>
 							</tr>
 						</tbody>
 					</table>
-					<textarea name="b-card__textarea" cols="30" rows="10" class="b-card__textarea" placeholder="Message..."></textarea>
-					<div class="l-card__price">
+
 						<div class="b-card__subtotal">Subtotal: $100.00</div>
 						<div class="b-card__total">Total: $100.00</div>
-						<a href="" class="b-card__link-back">Вернуться в магазин</a>
-						<input type="reset" value="Сбросить" class="b-card__reset">
-						<input type="submit" value="Оформить заказ" class="b-card__submit">
-					</div>
+
+						<label for="" class="b-contact-form__label">
+							<p>Ваше имя: <span class="red-star">*</span></p>
+							<input type="text" class="b-contact-form__input">
+						</label>
+						<label for="" class="b-contact-form__label">
+							<p>Ваш телефон: <span class="red-star">*</span></p>
+							<input type="text" class="b-contact-form__input">
+						</label>
+						<label for="" class="b-contact-form__label">
+							<p>Ваш email: <span class="red-star">*</span></p>
+							<input type="text" class="b-contact-form__input">
+						</label>
+						<label for="" class="b-contact-form__label">
+							<p>Ваше сообщение: <span class="red-star">*</span></p>
+							<textarea name="" id="" cols="30" rows="10" class="b-contact-form__textarea"></textarea>
+						</label>
+
+						<input type="submit" value="Оформить" class="b-card__submit">
 				</form>
 			</div>
 		</section>

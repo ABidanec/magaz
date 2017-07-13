@@ -17,7 +17,8 @@
 
 		.b-products__item{
 			position: relative;
-			float: left;
+			display: inline-block;
+			vertical-align: top;
 			width: $b-products__item-w;
 			margin: 0 0 $b-products__item-mb $b-products__item-ml;
 			text-align: center;
