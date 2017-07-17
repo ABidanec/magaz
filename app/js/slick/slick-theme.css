@@ -56,11 +56,21 @@
 .slick-next:focus:before
 {
     opacity: 1;
+
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
 {
     opacity: .25;
+
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
 }
 
 .slick-prev:before,
@@ -75,6 +85,11 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
 }
 
 .slick-prev
@@ -164,6 +179,11 @@
     border: 0;
     outline: none;
     background: transparent;
+
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -174,6 +194,10 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
 }
 .slick-dots li button:before
 {
@@ -201,4 +225,9 @@
 {
     opacity: .75;
     color: black;
+
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
 }

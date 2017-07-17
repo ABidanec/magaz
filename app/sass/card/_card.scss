@@ -17,6 +17,7 @@
 
 
 		td{
+			position: relative;
 			width: 18%;
 			padding: $b-card__table_td-pt;
 			border: 1px solid #222;
@@ -87,7 +88,7 @@
 			@extend .b-articles_link-btn;
 			float: right;
 			border: none;
-			margin: 0 0 0 $b-card__link-back-ml;
+			margin: 0 0 $b-card__link-back-ml $b-card__link-back-ml;
 		}
 
 		.b-card__link-delete{

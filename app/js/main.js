@@ -3,6 +3,7 @@ $(document).ready(function() {
 _moduleToTop.action();
 _moduleCaruselInner.action();
 _moduleSlider.action();
+_moduleSlickMenu.action();
 
 });
 
@@ -118,8 +119,33 @@ var _moduleSlider = (function(){
 
 	return {
 		action: function(){
-			slider.slick();
+			slider.slick({
+				dots: true,
+				autoplay: true,
+				autoplaySpeed: 3000,
+				fade: true,
+				pauseOnHover: true
+			});
 		}
 	}
 })();
 // end _moduleSlider
+
+var _moduleSlickMenu = (function(){
+	var mainMenu = $('.b-main-menu__list'),
+		topMenu = $('.b-top-menu__list');
+
+		return {
+			action: function(){
+				
+				topMenu.slicknav({
+					label : "Категории"
+				});
+
+				mainMenu.slicknav({
+					label : "Меню"
+				});
+			
+			}
+		}
+})();

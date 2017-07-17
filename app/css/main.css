@@ -41,7 +41,7 @@ body {
   font-family: 'open_sansregular', sans-serif;
   font-size: 0.75em;
   font-weight: bold;
-  background: #efefef; }
+  background: #fff; }
 
 ul {
   margin: 0;
@@ -53,7 +53,6 @@ textarea {
 
 /*l-top-bg*/
 .l-top-bg {
-  background: url("../img/b-header-bg.jpg") no-repeat top center;
   background-size: cover; }
 
 /*end l-top-bg*/
@@ -74,7 +73,7 @@ textarea {
   text-align: justify; }
 
 .b-top-contact__item {
-  float: left;
+  float: right;
   margin: 0 3% 0 0;
   padding: 0.5em 0 0; }
 
@@ -94,11 +93,12 @@ textarea {
     transition: 0.6s; }
 
 .b-m-head {
-  padding: 1em 0; }
+  padding: 1em 0;
+  background: #ddd; }
 
 .b-logo {
   float: left;
-  margin: 0 6em 0 0; }
+  margin: 0.4em 9em 0 0; }
 
 .b-logo__link {
   text-decoration: none;
@@ -180,6 +180,11 @@ textarea {
 .b-b-head {
   background: rgba(255, 255, 255, 0.7); }
 
+/* slicknav */
+.js .slicknav_menu {
+  display: none; }
+
+/* end slicknav*/
 .b-top-menu {
   padding: 1.5em 0 0.55em 0; }
 
@@ -323,8 +328,7 @@ textarea {
 .b-slider {
   position: relative;
   width: 100%;
-  height: 27em;
-  overflow: hidden; }
+  height: 27em; }
 
 .b-slider_list {
   list-style: none; }
@@ -343,7 +347,7 @@ textarea {
 .b-slider__text {
   position: absolute;
   top: 0;
-  min-height: 100%;
+  min-height: 89%;
   width: 25%;
   background: rgba(255, 255, 255, 0.6);
   -webkit-transition: 0.6s;
@@ -358,6 +362,29 @@ textarea {
     -o-transition: 0.6s;
     transition: 0.6s; }
 
+/* slick nav */
+.slick-dots li button {
+  color: #000; }
+  .slick-dots li button:before {
+    font-size: 14px; }
+
+.slick-prev,
+.slick-next {
+  top: 45%; }
+
+.slick-prev:before {
+  content: "\f104"; }
+
+.slick-next:before {
+  content: "\f105"; }
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'FontAwesome';
+  font-size: 55px;
+  color: #444; }
+
+/* end slick nav */
 /*end b-t-nav-slid*/
 /*offer*/
 .b-offer {
@@ -372,7 +399,7 @@ textarea {
 .b-offer__item {
   position: relative;
   float: left;
-  width: 30%;
+  width: 31%;
   margin: 0 0 0 3%; }
   .b-offer__item:first-child {
     margin: 0; }
@@ -410,6 +437,10 @@ textarea {
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
+
+.b-offer__img {
+  width: 100%;
+  height: 100%; }
 
 /*end offer*/
 /*products*/
@@ -960,6 +991,7 @@ textarea {
   margin: 0 0 1em 0;
   background: #3174AE; }
   .b-card__table td {
+    position: relative;
     width: 18%;
     padding: 1em;
     border: 1px solid #222;
@@ -1035,7 +1067,7 @@ textarea {
 .b-card__link-delete {
   float: right;
   border: none;
-  margin: 0 0 0 1em; }
+  margin: 0 0 1em 1em; }
 
 /* end card */
 /********* end card **********/

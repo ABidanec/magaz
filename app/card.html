@@ -8,12 +8,18 @@
 	
 	<script src="js/modernizr/modernizr.js"></script>
 	
+	<link rel="stylesheet" href="js/slick/slick.css">
+	<link rel="stylesheet" href="js/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="js/slick-nav/slicknav.min.css">
+
 	<link rel="stylesheet" href="font/OpenSans/stylesheet.css">
 	<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font/raleway-regular/stylesheet.css">
 
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
@@ -119,37 +125,40 @@
 				</nav>
 				<h1 class="b-card__head">The Card</h1>
 				<form action="/" class="b-card__form">
-					<table class="b-card__table">
-						<thead class="b-card__thead">
-							<tr>
-								<td>Изображение</td>
-								<td>Наименование</td>
-								<td>Цена</td>
-								<td>Количество</td>
-								<td>Стоимость</td>
-							</tr>
-						</thead>
-						<tbody class="b-card__tbody">
-							<tr>
-								<td>
-									<img src="pic/products/product1.jpg" alt="img" class="b-card__img">
-								</td>
-								<td>4-in-1 Evolve Grill</td>
-								<td>$100.00</td>
-								<td><input type="number" class="b-card__quantity"></td>
-								<td>$100.00 <a href="" class="b-card__link-delete">Delete</a></td>
-							</tr>
-							<tr>
-								<td>
-									<img src="pic/products/product1.jpg" alt="img" class="b-card__img">
-								</td>
-								<td><p>4-in-1 xcxczxczxczxczxccc cccccccccccccc cccccccccc ccccccccccccc cccccccccccccccc ccccccccccccc cccccccccccEvolve Grill</p></td>
-								<td><p>$100.00cccccccccccc ccccccccccccccccccccccc ccccccc ccccccccccccccc ccccccccc cccccccccc ccccccccccc cccccccc ccccccc</p></td>
-								<td><input type="number" class="b-card__quantity"></td>
-								<td><p>$100.00 cccccc ccccccccccccccc cccccccc ccccccccccccccccc ccccccc cccccccc ccccccccc ccccccccc ccccccccccccc</p><a href="" class="b-card__link-delete">Удалить</a></td>
-							</tr>
-						</tbody>
-					</table>
+					<div class="l-card__table">
+						<table class="b-card__table">
+							<thead class="b-card__thead">
+								<tr>
+									<td>Изображение</td>
+									<td>Наименование</td>
+									<td>Цена</td>
+									<td>Количество</td>
+									<td>Стоимость</td>
+								</tr>
+							</thead>
+							<tbody class="b-card__tbody">
+								<tr>
+									<td data-label="Изображение:">
+										<img src="pic/products/product1.jpg" alt="img" class="b-card__img">
+									</td>
+									<td data-label="Наименование:">4-in-1 Evolve Grill</td>
+									<td data-label="Цена:">$100.00</td>
+									<td data-label="Количество:"><input type="number" class="b-card__quantity"></td>
+									<td data-label="Стоимость:" class="clearfix">$100.00 <a href="" class="b-card__link-delete">Delete</a></td>
+								</tr>
+								<tr>
+									<td data-label="Изображение:">
+										<img src="pic/products/product1.jpg" alt="img" class="b-card__img">
+									</td>
+									<td data-label="Наименование:"><p>4-in-1 xcxczxczxczxczxccc cccccccccccccc cccccccccc ccccccccccccc cccccccccccccccc ccccccccccccc cccccccccccEvolve Grill</p></td>
+									<td data-label="Цена:"><p>$100.00cccccccccccc ccccccccccccccccccccccc ccccccc ccccccccccccccc ccccccccc cccccccccc ccccccccccc cccccccc ccccccc</p></td>
+									<td data-label="Количество:"><input type="number" class="b-card__quantity"></td>
+									<td data-label="Стоимость:" class="clearfix"><p>$100.00 cccccc ccccccccccccccc cccccccc ccccccccccccccccc ccccccc cccccccc ccccccccc ccccccccc ccccccccccccc</p><a href="" class="b-card__link-delete">Удалить</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- l-card__table -->
 					<textarea name="b-card__textarea" cols="30" rows="10" class="b-card__textarea" placeholder="Message..."></textarea>
 					<div class="l-card__price">
 						<div class="b-card__subtotal">Subtotal: $100.00</div>
@@ -225,6 +234,8 @@
 	<div class="b-scroll">Вверх</div>
 	<!-- b-scroll -->
 	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="js/slick-nav/jquery.slicknav.min.js"></script>
+	<script src="js/slick/slick.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@ body{
 	font-family: 'open_sansregular', sans-serif;
 	font-size: 0.75em;
 	font-weight: bold;
-	background: #efefef;
+	background: $body-bg;
 }
 
 ul{
@@ -67,7 +67,7 @@ textarea {
 
 /*l-top-bg*/
 .l-top-bg{
-	background: url("../img/b-header-bg.jpg") no-repeat top center;
+	// background: url("../img/b-header-bg.jpg") no-repeat top center;
 	background-size: cover;
 }
 /*end l-top-bg*/

@@ -3,18 +3,87 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   /* services list*/
-  .b-services__item {
+  .b-services__item,
+  .b-offer__item {
+    width: 100%;
+    margin: 0 0 1em 0; }
+    .b-services__item:first-child,
+    .b-offer__item:first-child {
+      margin: 0 0 1em 0; }
+  /* end services list*/
+  /* inner */
+  .b-prod-gallery-nav {
+    padding: 0; }
+  .b-prod-gallery-nav__prev,
+  .b-prod-gallery-nav__next {
+    display: none; }
+  /* end inner */ }
+
+@media only screen and (max-width: 840px) {
+  /* table card */
+  .l-card__table {
     width: 100%; }
-  /* end services list*/ }
+  .b-card__table {
+    width: 100%;
+    border-collapse: collapse; }
+  .b-card__thead {
+    display: none; }
+  .b-card__tbody tr {
+    border-bottom: 2px solid #000; }
+  .b-card__tbody td {
+    display: block;
+    padding: 3% 0 3% 30%;
+    width: 70%;
+    text-align: center; }
+  .b-card__tbody td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 2%;
+    font-weight: 700; }
+  .b-card__img {
+    height: auto; }
+  /* end table card */ }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   /* articles */
   .b-articles__item {
-    width: 100%; }
-  /* end articles */ }
-
-@media only screen and (max-width: 600px) {
+    width: 100%;
+    margin-left: 0; }
+  /* end articles */
+  /* products */
+  .b-products__item {
+    width: 45%; }
+  /* end products*/
+  /* slicknav */
+  .slicknav_nav ul {
+    margin: 0; }
+  .b-main-menu,
+  .b-top-menu {
+    display: none; }
+  .js .slicknav_menu {
+    display: block; }
+  .slicknav_btn {
+    width: 98%; }
+  /* end slicknav */
+  /* contact */
+  .b-contact-info__item .fa {
+    font-size: 2.5em; }
+  /* end contact */
+  /* footer */
+  .b-footer {
+    height: auto; }
+  .b-footer__blok-info {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    width: 43%; }
+  .b-footer__email {
+    width: 43%;
+    padding: 0 2% 0 0; }
+  .b-footer__request {
+    width: 93.3%; }
+  /* end footer */
   /* menu */
   .b-main-menu {
     height: auto; }
@@ -23,8 +92,8 @@
     display: block;
     height: auto; }
   .b-main-menu__item {
-    width: 50%;
-    float: left;
+    width: 100%;
+    text-align: center;
     position: relative; }
   /* end menu */
   /* menu categories */
@@ -35,25 +104,76 @@
     display: block;
     height: auto; }
   .b-top-menu__item {
-    width: 50%;
-    float: left;
+    width: 100%;
+    text-align: center;
     position: relative;
     margin: 0 0 1em 0; }
+    .b-top-menu__item .b-top-menu__sub-list {
+      visibility: visible;
+      opacity: 1; }
   .b-top-menu__link:hover {
     border-bottom: none; }
-  /* end menu categories */
-  /* product list */
+  .b-top-menu__sub-list {
+    position: relative;
+    background: #62bfc4; }
+    .b-top-menu__sub-list .b-top-menu__sub-list {
+      visibility: visible;
+      opacity: 1; }
+  .b-top-menu__sub-list .b-top-menu__sub-list {
+    position: relative;
+    left: 0; }
+  /* end menu categories */ }
+
+@media only screen and (max-width: 700px) {
+  /* inner */
+  .b-prod-gallery-nav {
+    display: none; }
+  /* end inner */ }
+
+@media only screen and (max-width: 600px) {
+  .b-logo,
+  .b-t-search,
+  .b-t-basket {
+    display: block;
+    width: 100%;
+    margin: 0 0 1em 0; }
+  .b-logo__link {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .b-top-contact__item {
+    float: left; }
+  .b-t-search__reqest {
+    width: 86%; }
+  .b-t-search__send {
+    width: 10.8%;
+    padding: 1px 1px; }
+  .b-t-basket__link {
+    display: block;
+    text-align: center; }
+  .b-t-basket__link .fa {
+    display: none; }
+  /* product */
   .b-products__item {
-    width: 45%; }
-  /* end product list */ }
+    width: 90%; }
+  /* end product*/
+  /* contact */
+  .b-contact-info__item .fa {
+    font-size: 1.5em; }
+  /* end contact */ }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .b-top-contact__item {
+    width: 45%; }
   .b-top-menu__item {
     width: 100%;
     display: block;
     position: relative;
     margin: 0 0 1em 0;
     text-align: center; } }
+
+.b-contact-info__logo {
+  display: none; }
 
 /* Custom, iPhone Retina */
