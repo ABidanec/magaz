@@ -75,3 +75,15 @@ textarea {
 .red-star{
 	color: $red-star-c;
 }
+
+/* link */
+a{
+	color: $a-c;
+	@include transition($time);
+
+	&:hover{
+		color: $a-c_h;
+		@include transition($time);
+	}
+}
+/* end  link */

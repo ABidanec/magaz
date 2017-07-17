@@ -59,6 +59,21 @@ textarea {
 .red-star {
   color: #ff4141; }
 
+/* link */
+a {
+  color: #62bfc4;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
+  a:hover {
+    color: #777;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s; }
+
+/* end  link */
 /* end core */
 /* header */
 .b-header {
@@ -1158,3 +1173,43 @@ textarea {
 
 /*end form*/
 /********* end contact ********/
+/********* pagination *********/
+.b-pagination {
+  margin: 0 auto 2em;
+  width: 33%; }
+
+.b-pagination__list {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto; }
+
+.b-pagination__item,
+.b-pagination__first,
+.b-pagination__last {
+  float: left;
+  text-align: center;
+  margin: 0 0.5em 0.5em 0; }
+
+.b-pagination__link,
+.b-pagination__first-link,
+.b-pagination__last-link {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  background: #ddd;
+  color: #222;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
+  .b-pagination__link:hover,
+  .b-pagination__first-link:hover,
+  .b-pagination__last-link:hover {
+    color: #fff;
+    background: #62bfc4;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s; }
+
+/********* end pagination *********/
